@@ -47,7 +47,7 @@ export default function DashboardPage() {
           <span className="text-sm text-gray-600">{session?.email}</span>
 
           <button
-            data-testid="auth-logout"
+            data-testid="auth-logout-button"
             onClick={() => {
               localStorage.removeItem('habit-tracker-session');
               router.push('/login');

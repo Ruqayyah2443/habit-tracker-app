@@ -35,7 +35,7 @@ export default function SignupForm() {
             (user: User) => user.email === normalizedEmail
         )
         if(existingUser){
-            setError('User already exists. Please login instead.');
+            setError('User already exists');
             return;
         }
         const newUser: User = {
